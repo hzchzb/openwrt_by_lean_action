@@ -70,6 +70,9 @@ jobs:
 
     - name: Get minieap
       run: cd openwrt && git clone https://github.com/ysc3839/openwrt-minieap.git -b gzhu package/minieap
+      
+    - name: Get minieap_luci
+      run: cd openwrt && git clone https://github.com/BoringCat/luci-app-minieap.git package/luci-app-minieap
 
     - name: Clean feeds
       run: cd openwrt && ./scripts/feeds clean
